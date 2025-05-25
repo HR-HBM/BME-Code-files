@@ -1,0 +1,186 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 100vw;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+canvas {
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    border:2px solid #206493;
+    border-radius: 15px;
+
+}
+
+#fileNameDisplay {
+    color: #6f95ac;
+    font-weight: bold; 
+    margin-top: 10px;
+}
+
+.diagnose-button:hover {
+    background-color: #1c395b;
+    color: white;
+}
+
+.custom-file-upload:hover {
+    background-color: white;
+    color: #1c395b;
+
+}
+
+.app-title {
+    font-weight: lighter;
+    font-size: 40px;
+    width: fit-content;
+    margin: 0 0 0 50px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload, .diagnose-button {
+    display: inline-block;
+    padding: 8px 8px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 10px 30px;
+    font-size: 15px;
+    text-align: center;
+    width: 150px;
+    border: solid 2px #206493;
+}
+
+.diagnose-button {
+    width: 165px;
+    background-color: white;
+    color: #206493;
+
+}
+
+.custom-file-upload {
+    background-color: #206493;
+    color: white;
+
+}
+
+.iris-image {
+    height: 40px;
+    width: 40px;
+}
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #adcedb;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.image-block {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 45vw;
+    border-right: solid 2px #adcedb;
+}
+
+.prediction-block {
+    width: 40vw;
+    margin-left: 80px;
+    
+}
+
+.sub-container {
+    display: flex;
+    margin-bottom: 30px;
+    
+}
+
+.results {
+    color: #1c395b;
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #1c395b;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    }
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+footer {
+    margin-top: auto;
+    background-color: #206493;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+   
+}
+
+.results {
+    font-size: 40px;
+    font-weight: 600;
+    margin:  0 0 30px 0;
+    
+}
+
+.prediction {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding: 0;
+}
+
+.diagnosis-detail {
+    list-style: none;
+    color: #646b7d;
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-style: italic;
+}
+
+.diagnosis {
+    margin-bottom: 40px;
+}
+
+.disclaimer {
+    color: #0068cb;
+    font-style: italic;
+    margin-top: 60px;
+}
+.disclaimer-option {
+    margin-bottom: 10px;
+}
+
+.dr-notes {
+    color: #0068cb;
+    border: solid 2px white;
+    border-radius: 8px;
+    padding: 5px 15px;
+    width: fit-content;
+    margin-bottom: 40px;
+}
